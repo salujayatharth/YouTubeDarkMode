@@ -1,0 +1,19 @@
+{
+  "name": "Dark Mode for YouTube",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Enable new look for YouTube ( Dark Mode )",
+  "icons": { "128": "icon.png" },
+  "background":[
+    {
+    "scripts" : ["background.js"],
+    "persistent": "false"
+    }
+  ],
+  "permissions": ["cookies","*://*.youtube.com/*"],
+  "browser_action": {
+    "default_title": "Enable Dark Mode",
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
